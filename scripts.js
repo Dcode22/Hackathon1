@@ -5,6 +5,20 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 startTimer()
+starTimer2()
+
+
+function starTimer2() {
+var bar = setInterval(scoreCountSubtract, 2000);
+
+  }
+
+  function scoreCountSubtract() {
+    
+    document.getElementById("scorecount").innerHTML = document.getElementById("scorecount").innerHTML - 1;
+    
+    
+     }
 
 function flipCard() {
   document.getElementById("scorecount").innerHTML = document.getElementById("scorecount").innerHTML - 1;
@@ -55,6 +69,8 @@ function unflipCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
+
+
 }
 
 (function shuffle() {
