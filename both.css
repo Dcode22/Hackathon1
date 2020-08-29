@@ -1,0 +1,87 @@
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	
+	display: grid;
+	grid-template-areas: "welcome welcome" "game1 game2";
+	grid-template-rows: 3fr 2fr ;
+	grid-template-columns: 1fr 1fr;
+	height: 100vh;
+	width: 85%;
+	margin: auto;	
+	grid-gap: 20px;
+}
+.sidebar {
+	grid-area: sidebar;
+	background-color: blue;
+	height: 100%;
+	width: 100%;
+}
+.welcome {
+/*	font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+	grid-area: welcome;
+	color: rgba(0, 0, 168, 0.8);
+	/*padding-top: 20vh;*/
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: transparent;
+	height: 100%;
+	width: 100%;
+}
+
+
+.game1 {
+	grid-area: game1;
+	background-color: rgba(0, 0, 168, 0.6);
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	/*border-radius: 10px;*/
+
+}
+.game2 {
+	grid-area: game2;
+	background-color: rgba(0, 0, 168, 0.6);
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	/*border-radius: 10px;*/
+}
+#myVideo {
+	width: 90% !important;
+	height: 100% !important;
+	z-index: -2;
+	object-fit: cover;
+	position: fixed;
+	top: 0;
+	left: 5%;
+	margin:auto;
+	opacity: 0.6;
+
+}
+.welcontent {
+	margin-top: 15vh;
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+img {
+	width: 40%;
+	margin-top: -17px;
+	margin-bottom: -15px;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+.gametitle {
+	margin-top: 10px;
+	font-size: 1.7rem;
+}
+.gamedescr {
+	margin: -5px;
+}
